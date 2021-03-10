@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Contacts.module.css';
-import s from './../common/Styles/Container/Container.module.css';
+import s from '../common/Styles/Container/Container.module.scss';
 
 
 function Contacts() {

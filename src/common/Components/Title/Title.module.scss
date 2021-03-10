@@ -1,0 +1,28 @@
+@import 'src/common/Styles/sass/variables';
+
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 2;
+    color: $titleColor;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 100px;
+    .title h2 {
+        margin: 0;
+    }
+    &::before {
+        content:"" ;
+        width: 60px;
+        height: 1px;
+        background: $primaryColor;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 30px);
+    }
+}
+
+
+

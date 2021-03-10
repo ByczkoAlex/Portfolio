@@ -1,0 +1,20 @@
+@import '../common/Styles/sass/variables';
+
+.myWorkBlock {
+    background-color: $bgColor;
+    .myWorksContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        .works {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+    }
+}
+
+
+
+
