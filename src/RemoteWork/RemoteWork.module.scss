@@ -1,0 +1,12 @@
+@import './src/common/Styles/sass/variables.scss';
+
+.remoteWorkBlock {
+    background-color: $bgSecondColor;
+    height: 400px;
+    .remoteWorksContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+

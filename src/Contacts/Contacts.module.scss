@@ -1,0 +1,31 @@
+@import './src/common/Styles/sass/variables';
+
+
+
+.color {
+    background-color: $bgColor;
+    .contactsBlock {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        .form {
+            .input {
+                height: 20px;
+                width: 100%;
+                margin-top: 4px;
+                background-color: $bgSecondColor;
+            }
+            .textarea {
+                height: 300px;
+                width: 100%;
+                margin-top: 4px;
+                background-color: $bgSecondColor;
+            }
+
+        }
+    }
+}
+
+
+
+

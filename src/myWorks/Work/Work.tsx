@@ -14,7 +14,7 @@ export function Work(props : PropsType) {
                 <button className={style.btn}>Show</button>
             </div>
             <div className={style.description}>
-                <h3 className={style.title}>{props.title}</h3>
+                <h2 className={style.title}>{props.title}</h2>
                 <span className={style.text}>{props.description}</span>
             </div>
         </div>

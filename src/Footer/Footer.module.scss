@@ -1,0 +1,21 @@
+@import './src/common/Styles/sass/variables';
+
+.color {
+    background-color: $bgSecondColor;
+    .footerBlock {
+        height: 300px;
+        flex-direction: column;
+        justify-content: start;
+        .block {
+            border: 1px solid black;
+            width: 250px;
+            height: 40px;
+            background-color: #ff6981;
+        }
+        .text {
+            color: $textColor;
+        }
+    }
+}
+
+

@@ -8,7 +8,7 @@ type PropsType = {
 export function Title (props: PropsType) {
     return (
         <div className={style.title}>
-            <h2>{props.text}</h2>
+            <h2 className={style.text}>{props.text}</h2>
         </div>
     )
 }

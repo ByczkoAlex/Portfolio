@@ -1,13 +1,14 @@
 import React from 'react';
-import style from './RemoteWork.module.css';
+import style from './RemoteWork.module.scss';
 import s from '../common/Styles/Container/Container.module.scss';
+import {Title} from "../common/Components/Title/Title";
 
 
 function RemoteWork() {
     return (
         <div className={style.remoteWorkBlock}>
-            <div className={`${style.container} ${style.remoteWorksContainer}`}>
-                <h3 className={style.title}>considering options for remote work</h3>
+            <div className={`${s.container} ${style.remoteWorksContainer}`}>
+                <Title text={'considering options for remote work'}/>
                 <button className={s.btn}>hire me</button>
             </div>
         </div>

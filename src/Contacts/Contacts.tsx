@@ -1,6 +1,7 @@
 import React from 'react';
-import style from './Contacts.module.css';
+import style from './Contacts.module.scss';
 import s from '../common/Styles/Container/Container.module.scss';
+import {Title} from "../common/Components/Title/Title";
 
 
 function Contacts() {
@@ -8,19 +9,13 @@ function Contacts() {
         <div className={style.color}>
             <div className={`${s.container} ${style.contactsBlock}`}>
                 <div>
-                    <h2 className={style.title}>Contacts</h2>
+                    <Title text={'Contacts'}/>
                 </div>
                 <div>
                     <form className={style.form}>
-
                         <input type="text" placeholder="Ваше имя" className={style.input}/>
-
-
                         <input type="text" placeholder="Ваш email" className={style.input}/>
-
-
                         <textarea className={style.textarea}></textarea>
-
                     </form>
                 </div>
                 <div>
