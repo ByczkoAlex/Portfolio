@@ -3,10 +3,7 @@ import style from './Skills.module.scss';
 import styleContainer from '../common/Styles/Container/Container.module.scss'
 import {Skill} from "./Skill/Skill";
 import {Title} from "../common/Components/Title/Title";
-import {faReact} from "@fortawesome/free-brands-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
-
+import {faHtml5, faJs, faReact} from "@fortawesome/free-brands-svg-icons";
 
 function Skills () {
     return (
@@ -16,9 +13,9 @@ function Skills () {
                     <Title text={"Skills"}/>
                 </div>
                 <div className={style.skills}>
-                    <Skill icon={<FontAwesomeIcon icon={faReact}/>} title = {"HTML"} description = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit...."}/>
-                    <Skill icon={<FontAwesomeIcon icon={faReact}/>} title = {"JS"} description = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed ut perspiciatis unde omnis iste"}/>
-                    <Skill icon={<FontAwesomeIcon icon={faReact}/>} title = {"React"} description = {"Natus error sit voluptatem accusantium doloremque laudantium."}/>
+                    <Skill icon={faHtml5} title = {"HTML"} description = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit...."}/>
+                    <Skill icon={faJs} title = {"JS"} description = {"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed ut perspiciatis unde omnis iste"}/>
+                    <Skill icon={faReact} title = {"React"} description = {"Natus error sit voluptatem accusantium doloremque laudantium."}/>
                 </div>
             </div>
         </div>
