@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Main.module.scss';
 import styleContainer from '../common/Styles/Container/Container.module.scss';
+import MeImg from '../assets/img/me.jpg'
 
 function Main() {
     return (
@@ -12,7 +13,7 @@ function Main() {
                     <p className={style.job}>Frontend developer</p>
                 </div>
                 <div className={style.photo}>
-                    <img src="https://source.unsplash.com/random/300x400" alt="it's me"/>
+                    <img src={MeImg} alt="it's me"/>
                 </div>
             </div>
         </div>

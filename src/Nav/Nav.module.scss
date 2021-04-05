@@ -7,12 +7,18 @@
     justify-content: center;
     .text {
         display: inline;
-        font-size: 13px;
         font-weight: 600;
         margin: 15px 5px;
-        padding: 8px;
-        font-family: $textFontFamily;
+        padding: 22px;
+    }
+    a {
+        text-decoration: none;
         color: $titleColor;
+        font-family: $textFontFamily;
+        font-size: 15px;
+    }
+    .active {
+        color: $primaryColor;
     }
 }
 
