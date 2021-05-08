@@ -1,0 +1,21 @@
+@import './src/common/Styles/sass/variables';
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: $primaryColor;
+  color: $titleColor;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  &:hover {
+    background-color: $bgColor;
+  }
+}

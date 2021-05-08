@@ -2,68 +2,53 @@
 @import '../../common/Styles/sass/mixins';
 
 .work {
+  width: 500px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+
+  .image {
+    position: relative;
+    height: 300px;
     width: 500px;
-    background-color: $bgSecondColor;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
-    .image {
-        position: relative;
-        height: 300px;
-        width: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        &::before {
-            position: absolute;
-            content: '';
-            background-color: $bgColor;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 0.4;
-        }
-        .btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            background-color: $primaryColor;
-            color: $titleColor;
-            font-size: 16px;
-            padding: 12px 24px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-            font-family: 'Josefin Sans', sans-serif;
-            &:hover {
-                background-color: $bgColor;
-            }
-        }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $bgColor;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.4;
     }
-
-    .description {
-        padding: 45px 15px 15px;
-        .title {
-            @include text($titleFontFamily, 23px, 700, $titleColor);
-        }
-        .text {
-            @include text($textFontFamily, 15px, 400, $textColor);
-            padding: 0 0 30px;
-            line-height: 1.6;
-            word-spacing: 1px;
-        }
-    }
+  }
 
 }
+
+.description {
+  padding: 45px 15px 15px;
+
+  .title {
+    @include text($titleFontFamily, 23px, 700, $titleColor);
+  }
+
+  .text {
+    @include text($textFontFamily, 15px, 400, $textColor);
+    padding: 0 0 30px;
+    line-height: 1.6;
+    word-spacing: 1px;
+  }
+}
+
 
 
 

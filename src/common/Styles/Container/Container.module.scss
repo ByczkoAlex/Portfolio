@@ -1,5 +1,6 @@
+@import './src/common/Styles/sass/variables.scss';
+
 .container {
-    border: 1px solid;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -10,13 +11,18 @@
 }
 
 .btn {
-    background-color: #7268ad;
-    color: white;
+    top: 50%;
+    left: 50%;
+    background-color: $primaryColor;
+    color: $titleColor;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
-    margin-top: 10px;
-    clear: both;
-    font-size: 0.7em;
-    height: 40px;
-    width: 200px;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    &:hover {
+        background-color: $bgColor;
+    }
 }
