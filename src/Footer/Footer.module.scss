@@ -3,7 +3,7 @@
 .color {
     background-color: $bgSecondColor;
     .footerBlock {
-        height: 300px;
+        min-height: 300px;
         flex-direction: column;
         justify-content: start;
         .block {

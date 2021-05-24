@@ -1,7 +1,7 @@
 @import './src/common/Styles/sass/variables';
 
 .MainBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $bgColor;
     .text {
         background-color: $bgColor;

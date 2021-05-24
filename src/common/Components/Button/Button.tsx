@@ -6,6 +6,6 @@ type ButtonPropsType = {
 }
 
 export const Button = (props: ButtonPropsType) => {
-    return <button className={style.btn}>{props.buttonText}</button>
+    return <button  className={style.btn}>{props.buttonText}</button>
 }
 

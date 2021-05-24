@@ -1,7 +1,7 @@
 @import './src/common/Styles/sass/variables';
 
 .header {
-    height: 80px;
+    min-height: 80px;
     background-color: $bgSecondColor;
     display: flex;
     justify-content: flex-end;
