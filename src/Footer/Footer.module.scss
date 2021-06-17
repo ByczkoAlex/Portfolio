@@ -7,10 +7,18 @@
         flex-direction: column;
         justify-content: start;
         .block {
-            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             width: 250px;
             height: 40px;
-            background-color: #ff6981;
+            a {
+                color: $primaryColor;
+                .icon{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
         }
         .text {
             color: $textColor;

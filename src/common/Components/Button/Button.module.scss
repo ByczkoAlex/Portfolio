@@ -1,6 +1,8 @@
 @import './src/common/Styles/sass/variables';
 
 .btn {
+  transition-duration: .2s;
+  text-decoration: none;
   position: absolute;
   top: 50%;
   left: 50%;

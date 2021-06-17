@@ -10,10 +10,11 @@ type PropsType = {
 }
 
 export function Work(props : PropsType) {
+
     return (
         <div className={style.work}>
             <div className={style.image} style={props.style}>
-                <Button  buttonText={props.buttonText} />
+                <Button buttonText={props.buttonText} />
             </div>
             <div className={style.description}>
                 <h2 className={style.title}>{props.title}</h2>

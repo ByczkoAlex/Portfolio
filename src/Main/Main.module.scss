@@ -3,6 +3,14 @@
 .MainBlock {
     min-height: 100vh;
     background-color: $bgColor;
+    .particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.3;
+    }
     .text {
         background-color: $bgColor;
         color: $titleColor;
@@ -17,10 +25,14 @@
             font-size: 40px;
         }
     }
-    .photo img{
-        width: 300px;
-        height: 450px;
+    .photoBlock {
+        margin-top: 110px;
         background-color: $bgColor;
+        z-index: 1;
+        .photo {
+            width: 300px;
+            height: 450px;
+        }
     }
 }
 

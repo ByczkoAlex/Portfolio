@@ -5,6 +5,8 @@ import {Work} from './Work/Work'
 import {Title} from '../common/Components/Title/Title'
 import socialImg from '../assets/img/social.jpg'
 import todoListImg from '../assets/img/todo.png'
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 function MyWorks() {
     const social = {
@@ -15,18 +17,21 @@ function MyWorks() {
         backgroundImage: `url(${todoListImg})`
     }
 
-
     return (
-        <div className={style.myWorkBlock}>
+        <div id={"3"} className={style.myWorkBlock}>
             <div className={`${MyWorksContainer.container} ${style.myWorksContainer}`}>
-                <div >
-                    <Title text={'My Works'}/>
-                </div>
-                <div className={style.works}>
-                    <Work  style={social} title={"Social Network"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit...."} buttonText={"Show"}/>
-                    <Work  style={todoList} title={"Todo List"} buttonText={"Show"}
-                          description={"Natus error sit voluptatem accusantium doloremque laudantium.Natus error sit voluptatem accusantium doloremque laudantium.Natus error sit voluptatem accusantium doloremque laudantium."}/>
-                </div>
+                <Fade>
+                    <div>
+                        <Title text={'My Works'}/>
+                    </div>
+                    <div className={style.works}>
+                        <Work style={social} title={"Social Network"}
+                              description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit...."}
+                              buttonText={"Show"}/>
+                        <Work style={todoList} title={"Todo List"} buttonText={"Show"}
+                              description={"Natus error sit voluptatem accusantium doloremque laudantium.Natus error sit voluptatem accusantium doloremque laudantium.Natus error sit voluptatem accusantium doloremque laudantium."}/>
+                    </div>
+                </Fade>
             </div>
         </div>
     );

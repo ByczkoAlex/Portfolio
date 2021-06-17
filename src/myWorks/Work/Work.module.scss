@@ -1,6 +1,6 @@
 @import '../../common/Styles/sass/variables';
 @import '../../common/Styles/sass/mixins';
-
+@import './src/common/Components/Button/Button.module';
 .work {
   width: 500px;
   background-color: $bgSecondColor;
@@ -31,6 +31,7 @@
       opacity: 0.4;
     }
   }
+
 }
 
 .description {

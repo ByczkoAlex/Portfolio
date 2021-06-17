@@ -1,9 +1,9 @@
 @import './src/common/Styles/sass/variables.scss';
 
 .Nav {
-    width: 500px;
     display: flex;
     justify-content: center;
+
     .text {
         display: inline;
         font-weight: 600;
