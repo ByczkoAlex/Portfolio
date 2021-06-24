@@ -3,21 +3,19 @@
 .Nav {
     display: flex;
     justify-content: center;
-
-    .text {
+    a {
         display: inline;
         font-weight: 600;
-        margin: 15px 5px;
-        padding: 22px;
-    }
-    a {
         text-decoration: none;
         color: $titleColor;
         font-family: $textFontFamily;
         font-size: 15px;
+        margin: 15px 5px;
+        padding: 22px;
     }
     .active {
         color: $primaryColor;
+        cursor: pointer;
     }
 }
 

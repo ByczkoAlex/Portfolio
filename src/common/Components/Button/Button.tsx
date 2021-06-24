@@ -3,9 +3,10 @@ import React from "react";
 
 type ButtonPropsType = {
     buttonText:string
+    link:string
 }
 
 export const Button = (props: ButtonPropsType) => {
-    return <a href=''  className={style.btn}>{props.buttonText}</a>
+    return <a href={props.link}  className={style.btn}>{props.buttonText}</a>
 }
 

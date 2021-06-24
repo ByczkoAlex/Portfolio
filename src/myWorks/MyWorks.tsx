@@ -5,6 +5,9 @@ import {Work} from './Work/Work'
 import {Title} from '../common/Components/Title/Title'
 import socialImg from '../assets/img/social.jpg'
 import todoListImg from '../assets/img/todo.png'
+import Snake from '../assets/img/snake.png'
+import Cinema from '../assets/img/cinema.jpg'
+import Treasure from '../assets/img/treasure.jpg'
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
@@ -12,10 +15,19 @@ function MyWorks() {
     const social = {
         backgroundImage: `url(${socialImg})`
     }
-
     const todoList = {
         backgroundImage: `url(${todoListImg})`
     }
+    const snake = {
+        backgroundImage: `url(${Snake})`
+    }
+    const cinema = {
+        backgroundImage: `url(${Cinema})`
+    }
+    const treasure = {
+        backgroundImage: `url(${Treasure})`
+    }
+
 
     return (
         <div id={"3"} className={style.myWorkBlock}>
@@ -26,10 +38,16 @@ function MyWorks() {
                     </div>
                     <div className={style.works}>
                         <Work style={social} title={"Social Network"}
-                              description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit...."}
-                              buttonText={"Show"}/>
-                        <Work style={todoList} title={"Todo List"} buttonText={"Show"}
-                              description={"Natus error sit voluptatem accusantium doloremque laudantium.Natus error sit voluptatem accusantium doloremque laudantium.Natus error sit voluptatem accusantium doloremque laudantium."}/>
+                              description={"In this project, we used most of the capabilities of react and redux.We have included typescript. And use Axios library."}
+                              buttonText={"Show"} link={"https://byczkoalex.github.io/SocialNetwork/"}/>
+                        <Work style={todoList} title={"Todo List"} buttonText={"Show"} link={"https://byczkoalex.github.io/Todolist/"}
+                              description={" We wrote this project during classes with a teacher. The basic features of react and redux were also used. "}/>
+                        <Work style={snake} title={"Snake"} buttonText={"Show"} link={"https://byczkoalex.github.io/OnlyJS/snake2.html"}
+                              description={" I started learning js with the book \"JavaScript for children. A self-instruction manual on programming\". At the end of the book I wrote a little game."}/>
+                        <Work style={cinema} title={"Cinema Service"} buttonText={"Show"} link={"https://byczkoalex.github.io/Bootstrap-4/"}
+                              description={" I wrote this little site while learning HTML and CSS. Here is using bootstrap 4 library. "}/>
+                        <Work style={treasure} title={"Treasure"} buttonText={"Show"} link={"https://byczkoalex.github.io/OnlyJsTreasure/treasure.html"}
+                              description={"I wrote this game according to the same book as \"snake\"."}/>
                     </div>
                 </Fade>
             </div>
