@@ -9,6 +9,7 @@ import Snake from '../assets/img/snake.png'
 import Cinema from '../assets/img/cinema.jpg'
 import Treasure from '../assets/img/treasure.jpg'
 import Homework from '../assets/img/HW.png'
+import Practice from '../assets/img/HW.png'
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
@@ -30,6 +31,9 @@ function MyWorks() {
     }
     const homework = {
         backgroundImage: `url(${Homework})`
+    }
+    const practice = {
+        backgroundImage: `url(${Practice})`
     }
 
 
@@ -54,6 +58,8 @@ function MyWorks() {
                               description={"I wrote this game according to the same book as \"snake\"."}/>
                         <Work style={homework} title={"HomeWorks"} buttonText={"Show"} link={"https://byczkoalex.github.io/homework/#/pre-junior"}
                               description={"These homework assignments help me remember the material. They are also universal components that can help in the future."}/>
+                        <Work style={practice} title={"Movies"} buttonText={"Show"} link={"https://byczkoalex.github.io/Practice/"}
+                              description={"I wrote this pet project to consolidate my skills."}/>
                     </div>
                 </Fade>
             </div>
