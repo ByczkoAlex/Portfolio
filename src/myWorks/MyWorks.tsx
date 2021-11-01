@@ -8,6 +8,9 @@ import todoListImg from '../assets/img/todo.png'
 import Snake from '../assets/img/snake.png'
 import Cinema from '../assets/img/cinema.jpg'
 import Treasure from '../assets/img/treasure.jpg'
+import Homework from '../assets/img/HW.png'
+import Practice from '../assets/img/HW.png'
+import Rick from '../assets/img/RaM.jpg'
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
@@ -26,6 +29,15 @@ function MyWorks() {
     }
     const treasure = {
         backgroundImage: `url(${Treasure})`
+    }
+    const homework = {
+        backgroundImage: `url(${Homework})`
+    }
+    const practice = {
+        backgroundImage: `url(${Practice})`
+    }
+    const rick = {
+        backgroundImage: `url(${Rick})`
     }
 
 
@@ -48,6 +60,14 @@ function MyWorks() {
                               description={" I wrote this little site while learning HTML and CSS. Here is using bootstrap 4 library. "}/>
                         <Work style={treasure} title={"Treasure"} buttonText={"Show"} link={"https://byczkoalex.github.io/OnlyJsTreasure/treasure.html"}
                               description={"I wrote this game according to the same book as \"snake\"."}/>
+                        <Work style={homework} title={"HomeWorks"} buttonText={"Show"} link={"https://byczkoalex.github.io/homework/#/pre-junior"}
+                              description={"These homework assignments help me remember the material. They are also universal components that can help in the future."}/>
+                        <Work style={practice} title={"Movies"} buttonText={"Show"} link={"https://byczkoalex.github.io/Practice/"}
+                              description={"I wrote this pet project to consolidate my skills."}/>
+                        <Work style={rick} title={"Rick and Morty"} buttonText={"Show"} link={"https://byczkoalex.github.io/Test/"}
+                              description={"You can find any character from \"Rick and Morty\". I wrote this pet project to consolidate my skills."}/>
+                        <Work style={homework} title={"Currency converter"} buttonText={"Show"} link={"https://byczkoalex.github.io/converter/"}
+                              description={"Currency converter. I wrote this pet project to consolidate my skills."}/>
                     </div>
                 </Fade>
             </div>
