@@ -20,7 +20,7 @@ function Footer() {
                         </a>
                     </div>
                     <div>
-                        <a href="https://t.me/crazy_Elk">
+                        <a href="https://t.me/BytskoAlex">
                             <FontAwesomeIcon icon={faTelegram} className={style.icon}/>
                         </a>
                     </div>
